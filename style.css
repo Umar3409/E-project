@@ -1,0 +1,529 @@
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Making Root for Color Theme */
+
+:root {
+    --dark-green: #398e3d;
+    --light-green: #84994F;
+    --icon-green: #90EE90;
+    --background-green: #C8E6C9;
+    --cards-green: #C1FFC1;
+    --Black: #121212;
+    --white: #fff;
+    --cream-background: #F8F0C6;
+}
+
+/* fancy scroll bar */
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--cream-background);
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--icon-green);
+}
+
+body {
+    font-family: "Exo 2", sans-serif !important;
+    color: var(--Black) !important;
+    overflow-x: hidden;
+    background-color: var(--white) !important;
+}
+
+section {
+    padding-block: 3rem;
+}
+
+h1 {
+    font-weight: 800 !important;
+    color: var(--dark-green) !important;
+}
+
+p {
+    font-weight: 400 !important;
+}
+
+.para {
+    max-width: 40rem !important;
+}
+
+h1 span {
+    color: var(--light-green) !important;
+}
+
+i {
+    color: var(--dark-green) !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.buton {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    border: 2px solid var(--dark-green);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: var(--dark-green);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background-color: var(--background-green);
+}
+
+.buton:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background: var(--dark-green);
+    z-index: -1;
+}
+
+.buton:hover,
+.buton:focus {
+    color: var(--white);
+}
+
+.buton:hover:before,
+.buton:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+/* Start Navigation Bar */
+
+nav {
+    background-color: var(--background-green) !important;
+
+}
+
+.logo-text {
+    font-weight: 800;
+    color: var(--dark-green);
+    letter-spacing: 1px;
+    margin-right: 0.2rem;
+}
+
+.logo-text-end {
+    color: var(--black) !important;
+    letter-spacing: 1px;
+    font-variant: small-caps;
+}
+
+.nav-link {
+
+    font-weight: 400 !important;
+    transition: 0.3s all ease !important;
+}
+
+.nav-link:hover {
+    color: var(--light-green) !important;
+    filter: brightness(125%);
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2856, 142, 60, 0.95%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+    width: 2.5rem !important;
+}
+
+
+/* End Navigation Bar */
+
+/* Home Carousel Start */
+
+.carousel-item,
+.carousel-item img,
+.carousel {
+    height: 75vh;
+    width: 100% !important;
+    object-fit: fill;
+}
+
+
+/* Home Carousel End */
+
+
+/* Home Health and Wellness Tips start */
+
+.first-card {
+    height: 95% !important;
+    background-color: var(--cards-green) !important;
+    border: 4px dashed var(--icon-green) !important;
+    transition: 0.5s all ease;
+}
+
+.first-card i {
+    color: var(--dark-green);
+}
+
+.first-card h3 {
+    color: var(--light-green);
+}
+
+.first-card:hover {
+    box-shadow: 0 0 10px 2px gray;
+    transform: translateY(5px);
+}
+
+/* Home Health and Wellness Tips end */
+
+/* Home Products and Services start */
+
+/* Home Products and Services end */
+
+/* Home Franchising Start */
+
+.sec-card {
+    height: 95% !important;
+    border: 2px solid var(--white) !important;
+    box-shadow: 0px 5px 3px 5px var(--cream-background);
+    transition: 0.4s all linear !important;
+}
+
+.sec-card i {
+    font-size: 4rem;
+}
+
+.sec-card:hover {
+    box-shadow: inset 0 -290px 0 0 var(--icon-green);
+}
+
+.sec-card:active {
+    scale: 0.9;
+}
+
+.formm {
+    width: 90% !important;
+    border: 5px dashed var(--icon-green);
+    background-color: var(--cards-green);
+    box-shadow: 0 0 5px 3px var(--background-green);
+}
+
+.form-control:hover {
+    border-color: var(--dark-green);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 2px 4px var(--dark-green) !important;
+}
+
+/* Home Frachising end */
+
+/* Footer start */
+
+.footer {
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark-green) !important;
+}
+
+.foot-h {
+    color: var(--cards-green);
+}
+
+.foot-p {
+    color: var(--cream-background);
+}
+
+.foot-i i {
+    height: 40px;
+    width: 40px;
+    color: var(--cream-background) !important;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background-color: rgb(141, 140, 140) !important;
+    padding: .3rem;
+    transition: all 0.2s ease;
+}
+
+.foot-i i:hover {
+    color: var(--dark-green) !important;
+    scale: 1.1;
+}
+
+.foot-li a {
+    color: var(--cream-background) !important;
+    line-height: 3rem;
+    text-decoration: none;
+
+}
+
+.foot-li li {
+    transition: all 0.3s linear;
+}
+
+.foot-li li:hover {
+    transform: translateX(10px);
+}
+
+/* footer end */
+/* Contact Section Start */
+
+.contact {
+    border: 5px groove var(--light-green) !important;
+    box-shadow: 0 0 8px 3px var(--dark-green);
+
+}
+
+.contact h4 {
+    text-decoration: underline var(--light-green) !important;
+}
+
+.formm2 {
+    border: 5px groove var(--light-green);
+    box-shadow: inset 0 0 5px 6px var(--background-green);
+}
+
+.formm2 .form-control {
+    border-color: var(--dark-green) !important;
+
+}
+
+.formm2 h2 {
+    text-decoration: underline var(--light-green) !important;
+}
+
+/* Contact Section End */
+
+/* Catering Section Start */
+
+.catering {
+    border: 6px groove var(--light-green) !important;
+    border-top-right-radius: 25% !important;
+    border-bottom-left-radius: 25% !important;
+    box-shadow: 0 0 8px 3px var(--dark-green);
+}
+
+.catering h3 {
+    text-decoration: underline var(--light-green) !important;
+}
+
+.formm3 {
+    border: 5px groove var(--light-green);
+    border-top-right-radius: 25% !important;
+    border-bottom-left-radius: 25% !important;
+    height: auto !important;
+    box-shadow: inset 0 0 5px 6px var(--background-green);
+    width: 90% !important;
+}
+
+.formm3 .form-control {
+    border-color: var(--dark-green) !important;
+}
+
+.formm3 h2 {
+    text-decoration: underline var(--light-green) !important;
+}
+
+/* Catering Section End */
+
+/* About Section Start */
+
+.about h2 {
+    text-decoration: overline;
+}
+
+.zoom {
+    width: 100%;
+    height: 38rem;
+    overflow: hidden;
+
+}
+
+.zoom img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: all ease-in-out 0.8s;
+}
+
+.zoom img:hover {
+    transform: scale(1.1);
+}
+
+.about2 .card {
+    border: 3px solid white;
+    box-shadow: 0 0 9px 2px rgb(194, 193, 193);
+    transition: all 0.3s linear;
+}
+
+.about2 .card:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 0 10px 8px rgb(194, 193, 193);
+
+}
+
+.about2 i {
+    font-weight: bolder !important;
+    font-size: 3rem !important;
+}
+
+.about2 h3 {
+    font-weight: bold !important;
+}
+
+/* About Section End */
+
+/* Products & Menus Start */
+
+.buttton {
+    padding: 0.6rem 1.3rem;
+    border: 2px solid gray;
+    color: gray;
+    background: var(--white);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.buttton:hover {
+    border: 2px solid var(--icon-green);
+    color: var(--dark-green);
+    background-color: var(--icon-green);
+}
+
+.buttton:focus {
+    background-color: var(--dark-green);
+    border: 2px solid var(--dark-green);
+    color: var(--white);
+}
+
+.menus {
+    height: auto !important;
+    border: 3px solid var(--light-green) !important;
+    transition: 0.5s all ease !important;
+}
+
+.menus:hover {
+    box-shadow: 0 0 9px 9px #84994F !important;
+    transform: translateX(5px);
+
+}
+
+.menus img {
+    height: 43vh !important;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    transition: 0.5s all ease;
+}
+
+.menus img:hover {
+    transform: scale(0.9);
+}
+
+.cut-price {
+    text-decoration: line-through;
+}
+
+.cart {
+    width: 95%;
+    padding: 0.8rem 2rem;
+    font-size: 1.2rem !important;
+    color: var(--background-green) !important;
+    background: linear-gradient(to right, #144914, #84994F, #133f0f);
+    transition: all 0.5s linear;
+}
+
+.cart:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 9px 9px #84994F;
+}
+
+.cart:active {
+    scale: 0.925;
+
+}
+
+.cart i {
+    color: var(--background-green) !important;
+}
+
+/* feedback Start */
+
+.feedback {
+    padding: 30px;
+    height: 100%;
+    border: 4px solid var(--Black);
+    border-radius: 8px;
+    box-shadow: 0 0 4px 3px var(--dark-green), inset 0 0 4px 3px var(--icon-green) !important;
+
+}
+
+.customer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--cards-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-green);
+    margin-right: 15px;
+}
+
+.rating i {
+    color: #ffc107 !important;
+    margin-top: 5px;
+}
+
+/* Style.css End */
+
+
+/* Some Media Quiries  */
+
+
+
+@media (max-width:768px) {
+
+    .zoom {
+        width: 100%;
+        height: 30rem;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:991px) {
+    .navbar .buton {
+        display: inline !important;
+    }
+
+}
+
+@media (max-width:1200px) {
+    .navbar .buton {
+        display: none;
+    }
+
+}
